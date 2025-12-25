@@ -1,6 +1,6 @@
-
-import Navbar from './navbar'; //must import components to use them
-import Hero from './Hero';
+import Home from "./pages/Home";
+import Navbar from './components/navbar'; //must import components to use them
+import Hero from './components/Hero';
 
 function App() {
   /*curely braces won't output objects or booleans directly */
