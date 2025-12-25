@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Navbar from './navbar'; //must import components to use them
+import Hero from './Hero';
 
 function App() {
+  /*curely braces won't output objects or booleans directly */
+  const projTitle = "Project 1";
+  const views = 30;
+  const link = "http://www.google.com";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar /> {/* show components */}
+     <div className="content"></div>
+      <Hero />
+      <h1>{projTitle}</h1> {/* curly braces allow for dynamic content insertion (templates) */}
+      <p>Number of views: {views}</p>
+
+      <p>{10}</p>
+      <p>"hello world"</p>
+      <p>{[1, 2, 3, 4, 5]}</p>
+      <p>{ Math.random() * 10 }</p>
+
+      <a href = {link}>Google</a>
     </div>
   );
 }
