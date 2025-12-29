@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
-import Navbar from './components/navbar'; //must import components to use them
-import Hero from './components/Hero';
+import Navbar from './components/Navbar/navbar'; //must import components to use them
+import Hero from './components/Hero/Hero';
+import './styles/globals.css';
 
 function App() {
   /*curely braces won't output objects or booleans directly */
@@ -10,7 +11,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar /> {/* show components */}
+        <Navbar />
+      
      <div className="content"></div>
       <Hero />
       <h1>{projTitle}</h1> {/* curly braces allow for dynamic content insertion (templates) */}

@@ -1,0 +1,29 @@
+/*define values for colors, fonts, and spacing to maintain consistency across the website*/
+:root{
+  /*Color Variables*/
+  --deep-plum: #3b1e3f;
+  --light-violet: #6a4b6d;
+  --terracotta: #b35c3a;
+  --off-white: #f5f1ec;
+  --charcoal: #262226;
+
+  /*Fonts*/
+  --heading-font: "Fraunces", serif;
+  --text-font: "Inter", system-ui, sans-serif;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  
+  /*Spacing*/
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /*Border Radius*/
+  --border-radius: 8px;
+
+  /*Transition Duration*/
+  --transition-duration: 0.7s ease;
+}

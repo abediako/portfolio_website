@@ -1,3 +1,5 @@
+import "./ProjectCard.css";
+
 export default function ProjectCard({ title, description, tags, page, github, image, link }) {
   return (
     <article className="project-card">

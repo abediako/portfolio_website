@@ -1,0 +1,16 @@
+/*where things go*/
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.section {
+  margin-bottom: var(--space-xl);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
