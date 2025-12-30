@@ -1,0 +1,42 @@
+.carousel{
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid var(--deepplum);
+    display: flex;
+    overflow-x: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card{
+    height: 5em;
+    padding: 1em;
+    background: var(--lightviolet);
+    font-size: 3em;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+    flex: 0 0 5em;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: scroll 10s linear infinite;
+    padding-right: 1em;
+}
+
+/* animation to make the cards scroll from right to left */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
