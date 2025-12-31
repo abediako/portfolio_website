@@ -52,3 +52,59 @@
     height: 140px;
     background-color: var(--light-violet);;
 }
+
+.spotify-player img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.daylist{
+    font-size: 0.75rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.track-name{
+    font-weight: bold;
+}
+
+.track-artist{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.spotify-player.playing{
+    animation: breathe 7s ease-in-out infinite;
+}
+
+/*playing animation for spotify icon - i think its like a glow*/
+@keyframes breathe{
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+    50%{
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    .footer-left, .footer-right, .footer-center{
+        max-width: 100%;
+    }
+    .footer-right{
+        flex-direction: column;
+    }
+}
