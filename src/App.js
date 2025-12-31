@@ -15,30 +15,21 @@ function App() {
   const link = "http://www.google.com";
 
   return (
-    <div className="App">
-      <div className="background-image"></div>
       <Router>
+        <div className="app">
         <Navbar /> {/* navigation bar will be shown on all pages */}
+        <main className="content">
           <Routes> {/*which route matches the URL*/}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/experience" element={<Experience />} />
           </Routes>
-      </Router>
-      
-     <div className="content"></div>
-      <Hero />
-      <h1>{projTitle}</h1> {/* curly braces allow for dynamic content insertion (templates) */}
-      <p>Number of views: {views}</p>
-
-      <p>{10}</p>
-      <p>"hello world"</p>
-      <p>{[1, 2, 3, 4, 5]}</p>
-      <p>{ Math.random() * 10 }</p>
-
-      <a href = {link}>Google</a>
+        </main>
+    
+      <Footer />
     </div>
+    </Router>
   );
 }
 

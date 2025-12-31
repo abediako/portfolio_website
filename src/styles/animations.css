@@ -29,3 +29,19 @@
   transform: scale(1.03);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
+
+/*playing animation for spotify icon - i think its like a glow*/
+@keyframes breathe{
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+    50%{
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
