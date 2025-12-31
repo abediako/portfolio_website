@@ -1,0 +1,54 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    color: var(--off-white);
+    background-color: var(--deep-plum);
+}
+
+.footer-left, .footer-right, .footer-center{
+    max-width: 30%;
+}
+
+.footer-center ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center li{
+    margin-bottom: 0.75em;
+    cursor: pointer;
+}
+.footer-center li:hover{
+    text-decoration: underline;
+}
+
+.footer-right{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-icons{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.contact-icons a{
+    color: var(--off-white);
+    font-size: 1.4rem;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--off-white);
+}
+
+.spotify-player{
+    width: 140px;
+    height: 140px;
+    background-color: var(--light-violet);;
+}

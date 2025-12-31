@@ -1,7 +1,7 @@
 .carousel{
     margin: 100px auto;
     width: 90%;
-    border: 5px solid var(--deepplum);
+    border: 5px solid var(--deep-plum);
     display: flex;
     overflow-x: auto;
 }
@@ -14,7 +14,7 @@
 .card{
     height: 5em;
     padding: 1em;
-    background: var(--lightviolet);
+    background: var(--light-violet);
     font-size: 3em;
     border-radius: .2em;
     text-align: center;
