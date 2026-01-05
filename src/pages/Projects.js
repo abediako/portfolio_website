@@ -1,18 +1,10 @@
-import { projects } from "../data/projects";
-import ProjectCard from "../components/ProjectCard";
+import ProjectGrid from "../components/ProjectGrid/ProjectGrid";
 
 export default function Projects() {
   return (
-    <main>
-      {projects.map(project => (
-        <ProjectCard
-          key={project.id}
-          image={project.image}
-          title={project.title}
-          description={project.description}
-          tags={project.tags}
-        />
-      ))}
+    <main className="projects-page">
+      <h1>My Projects</h1>
+      <ProjectGrid />
     </main>
   );
 }

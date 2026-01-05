@@ -1,16 +1,21 @@
+import { Link } from "react-router-dom";
 import "./ProjectCard.css";
 
-export default function ProjectCard({ title, description, tags, page, github, image, link }) {
+function ProjectCard({ project }) {
   return (
-    <article className="project-card">
-      <img src={image} alt={`${title} screenshot`} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <ul>
-        {tags.map(tag => (
-          <li key={tag}>{tag}</li>
-        ))}
-      </ul>
-    </article>
+    <Link to={`/projects/${project.id}`} className="project-card">
+      <img src={project.thumbnail} alt={project.title} />
+      <div className="project-card-content">
+        <h3>{project.title}</h3>
+        <p>{project.shortDescription}</p>
+        <div className="tags">
+          {project.tags.map(tag => (
+            <span key={tag}>{tag}</span>
+          ))}
+        </div>
+      </div>
+    </Link>
   );
 }
+
+export default ProjectCard;

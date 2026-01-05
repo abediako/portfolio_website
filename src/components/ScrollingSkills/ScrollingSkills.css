@@ -1,42 +1,65 @@
-.carousel{
-    margin: 100px auto;
-    width: 90%;
-    border: 5px solid var(--deep-plum);
-    display: flex;
-    overflow-x: auto;
+.scrolling-skills{
+    overflow: hidden;
+    padding-bottom: var(--space-lg);
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.card{
-    height: 5em;
-    padding: 1em;
-    background: var(--light-violet);
-    font-size: 3em;
-    border-radius: .2em;
+.skills-title{
+    margin-bottom: var(--space-sm);
     text-align: center;
-    align-content: center;
-    flex: 0 0 5em;
+    color: var(--deep-plum);
 }
 
-.group{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    animation: scroll 10s linear infinite;
-    padding-right: 1em;
+.scrolling-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--light-violet);
+    padding: var(--space-sm) 1rem;
 }
+
+.scrolling-content{
+    display: flex;
+    gap: var(--space-md);
+    width: max-content;
+    animation: scrollSkills 35s linear infinite;
+}
+
+
+.skill-item{
+    padding: 0.4rem 1rem;
+    background-color: var(--deep-plum);
+    color: var(--off-white);
+    font-size: 0.85rem;
+    white-space: nowrap;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.skill-logo{
+    height: 65px;
+    width: auto;
+    background-color: var(--deep-plum);
+    padding: .8rem;
+    border-radius: 20px;
+}
+
 
 /* animation to make the cards scroll from right to left */
-@keyframes scroll {
+@keyframes scrollSkills {
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
+}
+
+@media (max-width: 768px) {
+  .scrolling-content {
+    animation-duration: 45s;
+  }
+
+  .skill-item {
+    font-size: 0.75rem;
+  }
 }

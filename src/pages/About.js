@@ -1,3 +1,5 @@
+import GetInTouch from '../components/GetInTouch/GetInTouch';
+
 const About = () => {
   return (
     <>

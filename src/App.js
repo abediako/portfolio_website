@@ -7,6 +7,9 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import './styles/globals.css';
+import Footer from './components/Footer/Footer';
+import ProjectDetails from './pages/ProjectDetails';
+
 
 function App() {
   /*curely braces won't output objects or booleans directly */
@@ -24,6 +27,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:projectId" element={<ProjectDetails />} />
           </Routes>
         </main>
     

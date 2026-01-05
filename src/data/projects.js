@@ -1,18 +1,25 @@
-/*sample projects data*/
 export const projects = [
   {
-    id: "emotion-study-space",
-    title: "Emotion-Aware Study Space",
-    description: "A concept exploring how interfaces respond to user emotion.",
-    tags: ["HCI", "React"],
-    image: "emotion-study-space.png",
+    id: "emotion-aware-vr",
+    title: "Emotion-Aware VR Meeting Space",
+    shortDescription: "A VR platform that adapts environments based on emotional cues.",
+    fullDescription:
+      "This project explores emotion-aware computing in virtual environments...",
+    tags: ["HCI", "VR", "Emotion-Aware Computing"],
+    thumbnail: "/images/emotion-vr.png",
+    year: "2024",
   },
   {
-    id: "language-learning-ar",
-    title: "AR Language Learning",
-    description: "Learning language through environment and interaction.",
-    tags: ["AR", "UX"],
-    image: "language-learning-ar.png",
-
+    id: "ai-habit-tracker",
+    title: "AI Habit Tracker",
+    shortDescription: "Personalized habit insights powered by AI.",
+    fullDescription:
+      "An AI-driven system that analyzes habit patterns...",
+    tags: ["AI", "Product", "UX"],
+    thumbnail: "/images/habit-tracker.png",
+    year: "2024",
   },
 ];
+export default projects;
+
+

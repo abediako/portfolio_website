@@ -26,6 +26,10 @@ li{
   font-family: var(--heading-font);
   cursor: pointer;
 }
+.nav-brand a{
+  text-decoration: none;
+  color: inherit;
+}
 
 nav{
   display: flex;

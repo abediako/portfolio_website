@@ -1,0 +1,99 @@
+.hero-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 85vh;
+    padding: 0rem 5rem;
+    /*background-color: var(--off-white);*/
+}
+
+.hero-image-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.hero-image-frame{
+    width: 320px;
+    height: 420px;
+    position: relative;
+}
+
+/* Organic shape behind you 
+.hero-image-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  background-color: var(--terracotta);
+  border-radius: 48% 52% 60% 40%;
+  z-index: 0;
+}*/
+
+/* Optional small accent 
+.hero-image-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -12px;
+  width: 28px;
+  height: 28px;
+  background-color: var(--terracotta);
+  border-radius: 50%;
+  z-index: 0;
+}*/
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /*Preserves the aspect ratio, and fits the image inside the container, without cutting*/
+    z-index: 2;
+    position: relative;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 440px;
+}
+
+.hero-title{
+    font-size: 3.2rem;
+    color: var(--deep-plum);
+    margin-bottom: 1.5rem;
+}
+
+.hero-bio{
+    max-width: 420px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: left;
+    width: 100%;
+}
+
+.hero-icons{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-icons a {
+    color: var(--deep-plum);
+    font-size: 2rem;
+}
+
+.hero-button{
+    padding: 10px 10px;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--terracotta);
+    color: var(--charcoal);
+    border-style: outset;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}

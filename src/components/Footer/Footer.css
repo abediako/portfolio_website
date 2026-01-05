@@ -1,9 +1,11 @@
 .footer{
     display: flex;
     justify-content: space-between;
-    padding: 3em;
+    padding: 2.5em 4vw;
     color: var(--off-white);
     background-color: var(--deep-plum);
+    position: relative;
+    z-index: 2;
 }
 
 .footer-left, .footer-right, .footer-center{
@@ -38,6 +40,7 @@
 .contact-icons a{
     color: var(--off-white);
     font-size: 1.4rem;
+    padding: 0.5rem;
 }
 
 .icon{
@@ -56,25 +59,33 @@
 .spotify-player img{
     width: 100%;
     border-radius: 8px;
+    text-decoration: none;
 }
 
 .daylist{
     font-size: 0.75rem;
     opacity: 0.8;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .track-name{
     font-weight: bold;
+    text-decoration: none;
 }
 
 .track-artist{
     font-size: 0.9rem;
     opacity: 0.9;
+    text-decoration: none;
 }
 
 .spotify-player.playing{
     animation: breathe 7s ease-in-out infinite;
+}
+
+.footer-left p{
+    color: var(--off-white);
 }
 
 
@@ -91,6 +102,8 @@
         max-width: 100%;
     }
     .footer-right{
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
 }
