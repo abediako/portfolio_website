@@ -1,0 +1,40 @@
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.section-title{
+    text-align: center;
+    color: var(--deep-plum);
+}
+
+.feature_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.viewMore{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-lg);
+}
+
+.viewMoreLink{
+    text-decoration: none;
+    color: var(--charcoal);
+    background-color: var(--terracotta);
+    padding: 0.6rem 1.4rem;
+    border-radius: 20px;
+    font-size:0.9rem;
+    font-weight: var(--font-weight-regular);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.viewMoreLink:hover{
+    background-color: var(--deep-plum);
+    color: var(--off-white);
+    transform: scale(1.05);
+}

@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: "emotion-aware-vr",
+    slug: "emotion-aware-vr",
     title: "Emotion-Aware VR Meeting Space",
     shortDescription: "A VR platform that adapts environments based on emotional cues.",
     fullDescription:
@@ -10,7 +10,7 @@ export const projects = [
     year: "2024",
   },
   {
-    id: "ai-habit-tracker",
+    slug: "ai-habit-tracker",
     title: "AI Habit Tracker",
     shortDescription: "Personalized habit insights powered by AI.",
     fullDescription:
