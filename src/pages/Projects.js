@@ -1,10 +1,11 @@
 import ProjectGrid from "../components/ProjectGrid/ProjectGrid";
+import projects from "../data/projects";
 
 export default function Projects() {
   return (
-    <main className="projects-page">
+    <section className="projects-page">
       <h1>My Projects</h1>
-      <ProjectGrid />
-    </main>
+      <ProjectGrid projects={projects} />
+    </section>
   );
 }

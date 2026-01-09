@@ -1,0 +1,99 @@
+.get-in-touch{
+    background-color: var(--light-violet);
+    padding: 6rem 4rem;
+}
+
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.text-section h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.text-section p{
+    max-width: 420px;
+    line-height: 1.6;
+    color: var(--charcoal)
+}
+
+.contact-section{
+    background-color: var(--off-white);
+    padding: 2.5rem;
+    border-radius: 8px;
+}
+
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-section input,
+.contact-section textarea{
+    background-color: var(--light-violet);
+    border: none;
+    padding: 0.9rem 1rem;
+    color: var(--charcoal);
+    font-size: 0.95rem;
+    border-radius: 8px;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder{
+    color: var(--charcoal);
+}
+
+textarea{
+    resize: none;
+    min-height: 140px;
+}
+
+.two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.radio-group p{
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.radio-group label{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+}
+
+.button-row{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button{
+    background-color: var(--terracotta);
+    color: black;
+    border: none;   
+    padding: 0.6rem 1.4rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}

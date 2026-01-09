@@ -6,7 +6,7 @@ function ProjectGrid() {
   return (
     <div className="project-grid">
       {projects.map(project => (
-        <ProjectCard key={project.id} project={project} />
+        <ProjectCard key={project.slug} project={project} />
       ))}
     </div>
   );

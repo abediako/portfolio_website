@@ -12,7 +12,7 @@ export default function FeaturedProjects() {
         Featured Projects
       </h2>
       
-      <div className="feature_grid">
+      <div className="feature-grid">
         {featuredProjects.slice(0,3).map(project => (
           <ProjectCard key={project.slug} project={project} />
         ))} {/* take the first 3 featured projects and insert a card for them; generate repeated HTML from data*/}
